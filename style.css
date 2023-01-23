@@ -23,6 +23,8 @@ body {
   height: 100vh;
 
   background: url('./images/pattern-background-desktop.svg') no-repeat;
+  background-position: center;
+  background-size: cover;
 
   display: flex;
   flex-direction: column;
@@ -31,7 +33,7 @@ body {
 }
 
 .container {
-  width: 45%;
+  width: 600px;
   height: auto;
 
   border-radius: 2rem;
@@ -44,6 +46,7 @@ body {
   
   background: url('./images/illustration-hero.svg');
   background-size: cover;
+  background-position: center;
 
   border-radius: 2rem 2rem 0 0;
 }
@@ -143,4 +146,11 @@ body {
   font-size: 1.6rem;
   font-weight: 900;
   text-decoration: none;
+}
+
+
+@media (max-width: 720px) {
+  .container {
+    width: 90%;
+  }
 }
